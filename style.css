@@ -1,0 +1,84 @@
+/* Limpeza de margens e padding padrão */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Fonte clássica com serifa (estilo jornal/blog) para leitura */
+    font-family: 'Georgia', serif; 
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+}
+
+main {
+    max-width: 650px; /* Mantém a leitura confortável e centralizada */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    color: #111;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: 'Helvetica', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Oculta o artigo vazio de forma limpa pelo CSS antes de o JS ser ativado */
+#renderizador-titulo:empty, 
+#renderizador-conteudo:empty {
+    display: none;
+}
